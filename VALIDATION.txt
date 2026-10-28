@@ -1,0 +1,64 @@
+Validation — Octane Solid Preview 0.2.0
+
+Blender 5.2.3 LTS
+Material-only viewport triggers Eevee branch creation
+Selected render engine remains Octane
+Octane/ALL output choice preserved with multiple outputs
+User output targets and active flags unchanged
+User node selection preserved
+Eevee and Solid share selected source image
+Eevee synchronization is idle without changes
+Real Eevee render: selected blue texture with Principled shading
+Real Eevee render: red Albedo after deselect
+Octane output remains correct after Eevee rendering
+Real Eevee render: unlit source texture
+Shading mode changes replace only owned shader
+Replacing selected Octane image updates shared source
+Constant Albedo removes stale helper image link
+Real Eevee render: constant green Albedo
+Disabling Eevee preview removes only Eevee helpers outside preview mode
+Existing user Eevee output takes precedence
+Existing Eevee shader wiring preserved with status explanation
+Deleted owned output is recreated automatically
+Cleanup removes Solid and Eevee helper nodes
+Cleanup preserves user graph
+Cleanup retains original Octane output
+
+Blender 5.2.3 LTS
+Albedo follows connected color, not normal
+No selection: Albedo without stealing active node
+Selected Octane image overrides Albedo
+Node selection is unchanged
+User render graph links unchanged
+Idle refresh performs no repeated graph writes
+Changing image updates preview
+Selected material resolves Albedo
+Deselect-all with stale active pointer falls back to Albedo
+Albedo-only mode ignores selection
+Empty selected image clears stale bitmap
+Correction node previews upstream bitmap with limitation status
+Constant Albedo previews viewport color
+Viewport color restored after switching to image
+Group interface traversal retains instance inputs
+Active group receives preview without stealing active nodes
+Nested editor active nodes preserved
+Native-only materials unchanged
+Workbench render shows selected blue bitmap with Octane node active
+Workbench render returns to red Albedo on deselect
+Cleanup removes owned helpers including groups
+Cleanup preserves user graph
+Registration/unregistration and repeat registration
+
+Blender 5.2.3 LTS
+Exact _RestrictData proxy reproduction: fixed.
+Restricted registration without material access; timer retry; migration after restoring data; selection preservation; deferred preference cleanup; restricted unregister; timer/keymap/handler/class teardown; repeat registration: passed.
+
+Blender 5.2.3 LTS
+Helper migration, off-canvas placement, reveal placement, idempotency, Home and selected filtering, selection restoration on failure, real editor operator execution, keymap cleanup: passed.
+
+Blender 5.2.3 LTS
+ZIP installation, preferences, timer scene scan, Solid Texture setup, toggle cleanup, save/reopen, undo hook cache invalidation, disable/unregister: passed.
+
+Installed preferences tests additionally passed: Material-only viewport updates, Lit/Unlit shader change, Eevee-only removal and re-enable.
+
+Rendering checks used real Blender 5.2.3 Workbench and Eevee. Octane nodes and render-engine identity were represented by test doubles. The installed Octane plugin/OctaneServer was not available; its output-selection logic was checked against upstream utility.py. Full live Octane integration needs user verification.
