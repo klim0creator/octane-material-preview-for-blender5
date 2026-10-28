@@ -6,7 +6,7 @@ tool which allows you to preview materials using only octane nodes in (solid or 
 
 1. Download `octane_material_preview_0_2_0.zip`. Do not extract it.
 2. In Blender, open **Edit → Preferences → Add-ons → dropdown menu → Install from Disk**.
-3. Select the ZIP and enable **Octane Solid Preview** if it is not enabled automatically.
+3. Select the ZIP and enable **Octane Material Preview by Klim** if it is not enabled automatically.
 4. Switch the 3D Viewport to **Solid** or **Material Preview**. The scene's Render Engine can remain set to **Octane**. For Solid shading, the add-on automatically selects **Color → Texture**.
 5. Your mesh needs a UV map. In **Object Properties → Viewport Display**, keep **Display As** set to **Textured**.
 
